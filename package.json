@@ -1,0 +1,32 @@
+{
+  "name": "@saber2pr/ab-test",
+  "version": "0.0.1",
+  "description": "ab test in browser",
+  "repository": {
+    "type": "git",
+    "url": "git+___"
+  },
+  "author": "saber2pr",
+  "license": "ISC",
+  "files": [
+    "lib/core/*",
+    "lib/index.*"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "dev": "rollup -c --watch",
+    "build": "tsc && rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^1.1.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^3.3.0",
+    "md5": "^2.3.0"
+  }
+}
