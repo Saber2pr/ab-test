@@ -1,10 +1,10 @@
 {
   "name": "@saber2pr/ab-test",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "ab test in browser",
   "repository": {
     "type": "git",
-    "url": "git+___"
+    "url": "git+git@github.com:Saber2pr/ab-test.git"
   },
   "author": "saber2pr",
   "license": "ISC",
@@ -16,13 +16,16 @@
   "scripts": {
     "start": "tsc --watch",
     "dev": "rollup -c --watch",
-    "build": "tsc && rollup -c"
+    "build": "tsc && rollup -c",
+    "prepublishOnly": "yarn build",
+    "release": "standard-version"
   },
   "devDependencies": {
     "rollup": "^1.1.2",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-uglify": "^6.0.4",
+    "standard-version": "^9.3.1",
     "typescript": "^4.3.5"
   },
   "dependencies": {
