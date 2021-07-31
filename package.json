@@ -1,6 +1,6 @@
 {
   "name": "@saber2pr/ab-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ab test in browser",
   "repository": {
     "type": "git",
