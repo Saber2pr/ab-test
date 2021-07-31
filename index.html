@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>@saber2pr/ab-test</title>
+  <script src="./ab-test.umd.js"></script>
+</head>
+
+<body>
+  <p>Is 'A' or 'B' ? <a id="ab" href="#"></a></p>
+  <script>
+    new ABTest().getVisitorAB().then(res => document.querySelector('#ab').textContent = res)
+  </script>
+  </body>
+</html>
